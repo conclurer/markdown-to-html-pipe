@@ -1,5 +1,5 @@
 # IDEA
-.idea/**/*
+/.idea/
 
 # Generated files
 node_modules
@@ -7,4 +7,7 @@ node_modules
 !**/*.d.ts
 
 # Tests
-tests
+/tests/
+
+# Travis Config
+.travis.yml
