@@ -1,0 +1,7 @@
+# IDEA
+.idea
+
+# Generated files
+node_modules
+**/*.js
+**/*.d.ts
