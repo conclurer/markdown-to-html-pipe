@@ -4,8 +4,9 @@
   "description": "Angular 2 Pipe that transforms a markdown string to HTML",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && tape tests/*.js",
-    "prepublish": "npm test"
+    "test": "npm run lint && tsc && tape tests/*.js",
+    "prepublish": "npm test",
+    "lint": "tslint **/*.ts"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.6",
     "tape": "^4.6.0",
+    "tslint": "^3.14.0",
     "typescript": "^2.0.0",
     "zone.js": "^0.6.14"
   },
