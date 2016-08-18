@@ -7,6 +7,7 @@ import marked = require('marked');
 
 export class MarkdownToHtmlPipe implements PipeTransform {
     public transform(markdown: string, options?: MarkedOptions): string {
+        if (markdown == null) return '';
         return marked(markdown, options);
     }
 

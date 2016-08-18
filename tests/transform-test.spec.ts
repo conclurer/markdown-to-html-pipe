@@ -4,6 +4,14 @@ import 'zone.js';
 import 'reflect-metadata';
 import {MarkdownToHtmlPipe} from '../index';
 
+test('undefined input', (t: Test) => {
+    let mdString: string;
+    let pipeInstance: MarkdownToHtmlPipe = new MarkdownToHtmlPipe();
+    let result: string = pipeInstance.transform(mdString);
+    t.equal(result, '');
+    t.end();
+});
+
 test('transform test', (t: Test) => {
     let mdString: string = 'This is an **example**.';
     let pipeInstance: MarkdownToHtmlPipe = new MarkdownToHtmlPipe();
