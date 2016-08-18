@@ -13,7 +13,7 @@ test('undefined input', (t: Test) => {
 });
 
 test('transform test', (t: Test) => {
-    let mdString: string = 'This is an **example**.';
+    let mdString = 'This is an **example**.';
     let pipeInstance: MarkdownToHtmlPipe = new MarkdownToHtmlPipe();
 
     // Execute test statement
