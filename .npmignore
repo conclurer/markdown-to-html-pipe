@@ -3,8 +3,6 @@
 
 # Generated files
 node_modules
-**/*.ts
-!**/*.d.ts
 
 # Tests
 /tests/
