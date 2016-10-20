@@ -1,17 +1,10 @@
-import {Pipe, PipeTransform} from '@angular/core';
-import marked = require('marked');
+export * from './src/markdown-to-html.pipe';
 
-@Pipe({
-    name: 'MarkdownToHtml'
+import { NgModule } from '@angular/core';
+import { MarkdownToHtmlPipe } from './src/markdown-to-html.pipe';
+
+@NgModule({
+    declarations: [MarkdownToHtmlPipe],
+    exports: [MarkdownToHtmlPipe]
 })
-
-export class MarkdownToHtmlPipe implements PipeTransform {
-    public transform(markdown: string, options?: MarkedOptions): string {
-        if (markdown == null) return '';
-        return marked(markdown, options);
-    }
-
-    public static setOptions(options: MarkedOptions): void {
-        marked.setOptions(options);
-    }
-}
+export class MarkdownToHtmlModule { }

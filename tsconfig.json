@@ -6,7 +6,7 @@
     "sourceMap": false,
     "experimentalDecorators": true,
     "strictNullChecks": false,
-    "declaration": true
+    "declaration": false
   },
   "exclude": [
     "node_modules"
