@@ -1,14 +1,27 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
-    "noImplicitAny": true,
-    "sourceMap": false,
+    "module": "commonjs",
+    "declaration": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "strictNullChecks": false,
-    "declaration": false
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
   },
   "exclude": [
-    "node_modules"
-  ]
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "vendor/*.d.ts",
+    "index.ts"
+  ],
+  "angularCompilerOptions": {
+   "genDir": "aot",
+   "skipMetadataEmit" : false
+ }
 }

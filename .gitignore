@@ -4,4 +4,8 @@
 # Generated files
 node_modules
 **/*.js
+**/*.js.map
 **/*.d.ts
+aot/
+yarn.lock
+**/*.metadata.json

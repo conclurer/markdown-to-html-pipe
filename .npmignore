@@ -1,8 +1,12 @@
 # IDEA
 /.idea/
 
+# Uncompiled files
+*.ts
+
 # Generated files
 node_modules
+*.js.map
 
 # Tests
 /tests/
