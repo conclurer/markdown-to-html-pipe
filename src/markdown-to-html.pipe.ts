@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import marked = require('marked');
+import * as marked from 'marked';
 
 @Pipe({
     name: 'MarkdownToHtml'
