@@ -5,13 +5,25 @@ Converts a Markdown string, outputs HTML.
 ## Usage
 
 ```typescript
+// example.module.ts
+import {NgModule} from '@angular/core';
+import {MarkdownToHtmlModule} from 'markdown-to-html-pipe';
+import {ExampleComponent} from './example.component';
+
+@NgModule({
+  imports: [MarkdownToHtmlModule],
+  declarations: [ExampleComponent]
+})
+export class ExampleModule {}
+```
+
+```typescript
+// example.component.ts
 import {Component} from '@angular/core';
-import {MarkdownToHtmlPipe} from 'markdown-to-html-pipe';
 
 @Component({
   selector: 'example',
-  template: `<div [innerHTML]="content|MarkdownToHtml"></div>`,
-  pipes: [MarkdownToHtmlPipe]
+  template: `<div [innerHTML]="content|MarkdownToHtml"></div>`
 })
 export class ExampleComponent {
   protected content: string = 'This will render **Markdown** content!';
