@@ -52,6 +52,6 @@
   },
   "dependencies": {
     "@types/marked": "^0.0.27",
-    "marked": "^0.3.6"
+    "marked": "^0.x"
   }
 }
