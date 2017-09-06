@@ -43,5 +43,5 @@ Will be rendered as:
 Run
 
 ```
-npm install --save markdown-to-html-pipe marked
+npm install --save markdown-to-html-pipe
 ```

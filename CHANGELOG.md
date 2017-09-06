@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.3
+
+- Moved chjj/marked back to usual dependencies #8 (thanks to @DanielKucal)
+
 ## 1.2.2
 
 - Mark chjj/marked as peer dependency (May help for future updates #7)
