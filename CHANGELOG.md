@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.4
+
+- Add support for Angular 5 #11 (thanks to @macjohnny)
+
 ## 1.2.3
 
 - Moved chjj/marked back to usual dependencies #8 (thanks to @DanielKucal)

@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-html-pipe",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Angular 2 Pipe that transforms a markdown string to HTML",
   "main": "index.js",
   "scripts": {
