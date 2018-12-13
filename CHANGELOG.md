@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.5
+
+- Add support for Angular 6 and 7 #13 (thanks to @macjohnny)
+
 ## 1.2.4
 
 - Add support for Angular 5 #11 (thanks to @macjohnny)
