@@ -6,9 +6,9 @@ import * as marked from 'marked';
 })
 
 export class MarkdownToHtmlPipe implements PipeTransform {
-    public transform(markdown: string, options?: MarkedOptions): string {
+    public transform(markdown: string, options?: MarkedOptions, inline?: boolean): string {
         if (markdown == null) return '';
-        return marked(markdown, options);
+        return (inline) ? marked.inlineLexer(markdown, [], options) : marked(markdown, options);
     }
 
     public static setOptions(options: MarkedOptions): void {
