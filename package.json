@@ -1,11 +1,11 @@
 {
   "name": "markdown-to-html-pipe",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Angular Pipe that transforms a markdown string to HTML",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run build && tape tests/*.js",
-    "prepublish": "npm run build && npm test",
+    "prepare": "npm run build && npm test",
     "build": "ngc",
     "lint": "tslint -e src/*.d.ts  src/**/*.ts tests/**/*.ts index.ts"
   },
@@ -35,22 +35,22 @@
   },
   "homepage": "https://github.com/conclurer/markdown-to-html-pipe#readme",
   "devDependencies": {
-    "@angular/compiler": "4.1.3",
-    "@angular/compiler-cli": "4.1.3",
-    "@angular/core": "4.1.3",
-    "@types/tape": "^4.2.27",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.0-beta.12",
-    "tape": "^4.6.0",
-    "tslint": "^3.14.0",
-    "typescript": "2.3.4",
-    "zone.js": "^0.8.4"
+    "@angular/compiler": "11.1.1",
+    "@angular/compiler-cli": "11.1.1",
+    "@angular/core": "^11.1.1",
+    "@types/tape": "^4.13.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3",
+    "tape": "^5.1.1",
+    "tslint": "^6.1.3",
+    "typescript": "4.1.3",
+    "zone.js": "^0.11.3"
   },
   "peerDependencies": {
-    "@angular/core": "^2.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0"
+    "@angular/core": "^2.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0"
   },
   "dependencies": {
-    "@types/marked": "^0.0.27",
-    "marked": "^0.x"
+    "@types/marked": "^1.2.1",
+    "marked": "^1.x"
   }
 }

@@ -6,12 +6,12 @@ import * as marked from 'marked';
 })
 
 export class MarkdownToHtmlPipe implements PipeTransform {
-    public transform(markdown: string, options?: MarkedOptions): string {
+    public transform(markdown: string, options?: marked.MarkedOptions): string {
         if (markdown == null) return '';
         return marked(markdown, options);
     }
 
-    public static setOptions(options: MarkedOptions): void {
+    public static setOptions(options: marked.MarkedOptions): void {
         marked.setOptions(options);
     }
 }
