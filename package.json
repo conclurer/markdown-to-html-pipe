@@ -1,11 +1,11 @@
 {
   "name": "markdown-to-html-pipe",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Angular Pipe that transforms a markdown string to HTML",
   "main": "index.js",
   "scripts": {
     "test": "npm run lint && npm run build && tape tests/*.js",
-    "prepublish": "npm run build && npm test",
+    "prepare": "npm run build && npm test",
     "build": "ngc",
     "lint": "tslint -e src/*.d.ts  src/**/*.ts tests/**/*.ts index.ts"
   },

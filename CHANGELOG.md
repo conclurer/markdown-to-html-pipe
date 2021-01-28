@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.6
+
+- Add support for Angular 8, 9, 10 & 11.
+- Fixed outdated dependencies.
+
 ## 1.2.5
 
 - Add support for Angular 6 and 7 #13 (thanks to @macjohnny)
